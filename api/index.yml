@@ -15,6 +15,19 @@ paths:
       description: Provide your name in the request and get a personalized greeting.
       tags:
         - greeter
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                name:
+                  type: string
+              required:
+                - name
+            example:
+              name: General Kenobi
       responses:
         '200':
           description: Ok, you'll receive a personalized greeting
