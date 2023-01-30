@@ -10,13 +10,15 @@
     "serve": "yarn build:json && open-swagger-ui ./dist/greeter.json --open"
   },
   "keywords": [],
-  "author": "Hp Inc.",
+  "author": "MOES-Media",
   "license": "ISC",
   "devDependencies": {
+    "@commitlint/cli": "^17.2.0",
+    "@commitlint/config-conventional": "^17.2.0",
     "@semantic-release/changelog": "6.0.1",
     "@semantic-release/git": "10.0.1",
     "@semantic-release/npm": "9.0.1",
-    "semantic-release": "19.0.3",
+    "semantic-release": "19.0.5",
     "@openapitools/openapi-generator-cli": "^2.4.25",
     "live-server": "^1.2.2",
     "open-swagger-ui": "^1.0.1",
@@ -33,7 +35,7 @@
   "bugs": {
     "url": "https://github.com/MOES-Media/greeter-api/issues"
   },
-  "homepage": "https://pages.github.com/MOES-Media/greeter-api",
+  "homepage": "https://moes-media.github.io/greeter-api/",
   "release": {
     "branches": [
       "main"
