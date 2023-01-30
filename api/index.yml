@@ -1,0 +1,31 @@
+openapi: 3.0.0
+info:
+  description: OpenAPI spec used to generate routing in node with express
+  version: 1.0.0
+  title: Greeter API Docs
+
+servers:
+  - url: /api/v1
+
+paths:
+  /greet:
+    get:
+      summary: Get a personalized greeting!
+      operationId: getGreeting
+      description: Provide your name in the request and get a personalized greeting.
+      tags:
+        - greeter
+      responses:
+        '200':
+          description: Ok, you'll receive a personalized greeting
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  greeting:
+                    type: string
+                required:
+                  - greeting
+              example:
+                greeting: Hello there... General Kenobi!

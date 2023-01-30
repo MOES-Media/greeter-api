@@ -1,0 +1,65 @@
+{
+  "name": "greeter-api",
+  "version": "1.0.0",
+  "description": "",
+  "main": "dist/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build:json": "swagger-cli bundle api/index.yml -o dist/greeter.json -r -t json",
+    "build:docs": "redoc-cli build api/index.yml --output docs/index.html",
+    "serve": "yarn build:json && open-swagger-ui ./dist/greeter.json --open"
+  },
+  "keywords": [],
+  "author": "Hp Inc.",
+  "license": "ISC",
+  "devDependencies": {
+    "@semantic-release/changelog": "6.0.1",
+    "@semantic-release/git": "10.0.1",
+    "@semantic-release/npm": "9.0.1",
+    "semantic-release": "19.0.3",
+    "@openapitools/openapi-generator-cli": "^2.4.25",
+    "live-server": "^1.2.2",
+    "open-swagger-ui": "^1.0.1",
+    "redoc-cli": "^0.13.20",
+    "swagger-cli": "^4.0.4"
+  },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github..com/MOES-Media/greeter-api"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MOES-Media/greeter-api.git"
+  },
+  "bugs": {
+    "url": "https://github.com/MOES-Media/greeter-api/issues"
+  },
+  "homepage": "https://pages.github.com/MOES-Media/greeter-api",
+  "release": {
+    "branches": [
+      "main"
+    ],
+    "plugins": [
+      "@semantic-release/commit-analyzer",
+      "@semantic-release/release-notes-generator",
+      [
+        "@semantic-release/changelog",
+        {
+          "changelogFile": "CHANGELOG.md"
+        }
+      ],
+      "@semantic-release/github",
+      [
+        "@semantic-release/npm",
+        {
+          "npmPublish": false
+        }
+      ],
+      [
+        "@semantic-release/git",
+        {
+          "message": "chore(release): ${nextRelease.version} [skip ci]"
+        }
+      ]
+    ]
+  }
+}
