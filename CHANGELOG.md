@@ -1,3 +1,10 @@
+## [1.0.1](https://github.com/MOES-Media/greeter-api/compare/v1.0.0...v1.0.1) (2023-01-30)
+
+
+### Bug Fixes
+
+* **package:** setting module to commonjs ([831c1f0](https://github.com/MOES-Media/greeter-api/commit/831c1f0e7a4c48962cfda22d59ca140ae9d2b3a6))
+
 # 1.0.0 (2023-01-30)
 
 
