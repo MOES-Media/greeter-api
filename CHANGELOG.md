@@ -1,3 +1,10 @@
+# [1.1.0](https://github.com/MOES-Media/greeter-api/compare/v1.0.1...v1.1.0) (2023-01-30)
+
+
+### Features
+
+* **greet:** added request body to get greeting request ([923cc50](https://github.com/MOES-Media/greeter-api/commit/923cc504163eff150decaf8ec0b2c1bf39904300))
+
 ## [1.0.1](https://github.com/MOES-Media/greeter-api/compare/v1.0.0...v1.0.1) (2023-01-30)
 
 
