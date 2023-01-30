@@ -1,0 +1,31 @@
+{
+  "compilerOptions": {
+    "lib": [
+      "ESNext"
+    ],
+    "outDir": "dist",
+    "removeComments": true,
+    "target": "ES6",
+
+    // Module resolution
+    "baseUrl": "./",
+    "esModuleInterop": true,
+    "moduleResolution": "node",
+    "paths": {},
+
+    // Source Map
+    "sourceMap": true,
+    "sourceRoot": "/",
+
+    // Linter Checks
+    "noImplicitReturns": true,
+    "noUncheckedIndexedAccess": true,
+
+    "declaration": true,
+    "declarationMap": true
+  },
+  "include": ["./gen/**/*.ts"],
+  "exclude": [
+    "node_modules/**/*"
+  ]
+}
