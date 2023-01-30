@@ -9,7 +9,7 @@ servers:
 
 paths:
   /greet:
-    get:
+    post:
       summary: Get a personalized greeting!
       operationId: getGreeting
       description: Provide your name in the request and get a personalized greeting.
