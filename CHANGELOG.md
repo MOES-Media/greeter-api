@@ -1,3 +1,10 @@
+## [1.1.1](https://github.com/MOES-Media/greeter-api/compare/v1.1.0...v1.1.1) (2023-01-30)
+
+
+### Bug Fixes
+
+* **api:** changed get to post in order to accept request body ([98fa183](https://github.com/MOES-Media/greeter-api/commit/98fa18367f6d851b4f10941e6abaa104fdba6be4))
+
 # [1.1.0](https://github.com/MOES-Media/greeter-api/compare/v1.0.1...v1.1.0) (2023-01-30)
 
 
